@@ -1,0 +1,10 @@
+Select * from EmployeeDetails
+where firstName Like '[A-];
+
+
+Select Max(Salary) from EmployeeDetails;
+
+Select Department,Sum(Salary) as total_salary from EmployeeDetails
+Group By Department
+Order by total_salary ASC;
+
